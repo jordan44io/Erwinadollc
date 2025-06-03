@@ -4,6 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact – Maldo.io</title>
+  <meta name="description" content="Get in touch with Maldo.io for elite digital risk audits, cybersecurity services, or executive advisory. Fast, confidential, no fluff.">
+  <meta property="og:title" content="Contact – Maldo.io">
+  <meta property="og:description" content="Contact Oklahoma's trusted cybersecurity partner today.">
+  <meta property="og:image" content="/assets/social-preview.png">
+  <meta property="og:type" content="website">
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
@@ -11,27 +16,38 @@
   <nav>
     <div class="logo">Maldo.io</div>
     <div class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
-      <a href="resources.html">Resources</a>
-      <a href="about.html">Company</a>
+      <a href="index.html" aria-label="Home">Home</a>
+      <a href="services.html" aria-label="Services">Services</a>
+      <a href="resources.html" aria-label="Resources">Resources</a>
+      <a href="contact.html" aria-label="Contact">Contact</a>
     </div>
   </nav>
 
   <header class="hero">
     <div class="hero-content">
-      <h1>Contact Maldo.io</h1>
-      <p>Email: <a href="mailto:jordan@maldonadookc.com">jordan@maldonadookc.com</a></p>
+      <h1>Contact Us</h1>
+      <p>Need help fast? Submit your details below. We respond within 1 business hour.</p>
     </div>
   </header>
 
-  <section class="features">
-    <h2>Based in Oklahoma</h2>
-    <p>ERWINADO LLC is headquartered in Oklahoma City. Most audits are returned within 72 hours.</p>
+  <section class="contact-form">
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="_replyto" required>
+
+      <label for="message">What do you need help with?</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit" class="button">Submit</button>
+    </form>
   </section>
 
   <footer>
     <p>Maldo.io™ and ERWINADO LLC™ are trademarks of ERWINADO LLC. All rights reserved.</p>
+    <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Use</a></p>
   </footer>
 </body>
 </html>
